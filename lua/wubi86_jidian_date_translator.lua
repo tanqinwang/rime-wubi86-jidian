@@ -24,7 +24,7 @@ function wubi86_jidian_date_translator(input, seg)
     -- %%	the character `%´
 
     -- 输入完整日期
-    if (input == "datetime") then
+    if (input == "datetime" or input == "sj") then
         yield(Candidate("date", seg.start, seg._end, os.date("%Y-%m-%d %H:%M:%S"), ""))
     end
 
