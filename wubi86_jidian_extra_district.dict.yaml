@@ -3,8 +3,9 @@ name: wubi86_jidian_extra_district
 note: "扩展词库-行政区域"
 version: "2022-12-16"
 last_edit_time: "2022-12-16"
-dict_grouped: true # 词库管理应用识别：标记该码表为分组模式
-sort: original
+# dict_grouped: true # 词库管理应用识别：标记该码表为分组模式
+sort: by_weight
+use_preset_vocabulary: false
 # 码表的排序方式: by_weight 权重，original 原始顺序
 
 # 码表内容格式：字词 编码 权重 注释 中间是tab，不是空格）
