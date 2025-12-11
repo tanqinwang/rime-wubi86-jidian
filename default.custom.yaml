@@ -7,6 +7,7 @@
 
 
 patch:
+  # switches/@0/reset: 1
   # 菜单中可选的方案列表，可根据喜好自行调整顺序，第一位为默认方案
   schema_list:
     - schema: wubi86_jidian             # 五笔
@@ -18,13 +19,13 @@ patch:
 
   # Menu
   menu:
-    page_size: 5                    # 候选词数量，最多支持 10 个
+    page_size: 6                    # 候选词数量，最多支持 10 个
   switcher:
     hotkeys:        # 弹出菜单的快捷键
       - "Control+0"
       - "Shift+Control+0"
     abbreviate_options: true
-    caption: "【 输入法设置 】"
+    caption: "【 设置 】"
     option_list_separator: "｜"
 
   #-----------------------------------------------
@@ -39,9 +40,9 @@ patch:
   ascii_composer:
     good_old_caps_lock: true       # true: 在保持 cap 键原有的特征， false: 点击不会切换大小写
     switch_key:
-      Caps_Lock: commit_code        # 如果想用 cap 键切换中英文输入，就修改为上面三种的任一一种，否则用 noop
+      Caps_Lock: noop        # 如果想用 cap 键切换中英文输入，就修改为上面三种的任一一种，否则用 noop
       Shift_L: commit_code          # macOs 上 shift 键不区别左右，设置参数同上
-      Shift_R: commit_code
+      Shift_R: inline_ascii
       Control_L: noop
       Control_R: noop
 
