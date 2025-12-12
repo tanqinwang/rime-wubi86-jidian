@@ -4,7 +4,6 @@ version: "2019-01-20"
 last_edit_time: "2021-08-07"
 dict_grouped: true
 sort: by_weight
-use_preset_vocabulary: false
 
 ...
 ## 这是分组名
@@ -14,3 +13,4 @@ use_preset_vocabulary: false
 扣费率	rxyx
 内购	mwmq
 重构	tgsq
+浏览器	itkk
